@@ -25,7 +25,7 @@ El Gateway promedia los datos recibidos por los nodos y evalúa la calidad del a
 Una vez calculados los promedios, el sistema emite los datos por serial para el dashboard local y realiza una petición HTTP POST a **Supabase** (retornando Código HTTP 201 en caso de éxito).
 
 ![Vista Serial Monitor](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/fotos/Vista%20Serial%20Monitor.jpg)
-![Vista Supabase]()
+![Vista Supabase](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/foto%20supabase.jpg)
 ![Vista Página Flask](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/templates/Vista%20de%20P%C3%A1gina.png)
 
 ## 🏗️ Estructura del Código
@@ -49,11 +49,12 @@ pip install flask pyserial
 ## 📁 Estructura de Archivos del Proyecto
 
 Para que el sistema funcione correctamente (especialmente el servidor web), asegúrate de organizar los archivos de la siguiente manera en tu directorio de trabajo:
-
+```text
 TuProyecto/
 ├── APP.py
 └── templates/
     └── index.html
+```
     
 ## 🎮 Comandos Seriales de Control Manual
 
