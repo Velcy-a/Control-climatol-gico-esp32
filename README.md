@@ -79,7 +79,12 @@ Debido a que el router doméstico puede alterar dinámicamente el canal de radio
 ## Integrantes del Grupo
 Jaime Fuentes, Joaquín Fuentes, Ricardo Toro.
 
-### Trabajo para la asignatura Desarrollo de Software para Hardware (DCSH01)
+
+
+
+
+
+## Trabajo para la asignatura Desarrollo de Software para Hardware (DCSH01)
 
 Queremos agradecer a nuestro profesor, Jose Poblete por acompañarnos a lo largo de la carrera.
 
