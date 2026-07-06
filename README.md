@@ -78,11 +78,11 @@ Debido a que el router doméstico puede alterar dinámicamente el canal de radio
 
 ## Integrantes del Grupo
 
-*Jaime Fuentes
+* Jaime Fuentes
 
-*Joaquín Fuentes 
+* Joaquín Fuentes 
 
-*Ricardo Toro.
+* Ricardo Toro.
 
 
 
