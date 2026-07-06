@@ -13,18 +13,20 @@ Sistema de monitoreo ambiental distribuido que evalúa Temperatura, Humedad, niv
 El Gateway promedia los datos recibidos por los nodos y evalúa la calidad del aire para encender el LED correspondiente:
 
 * **Calidad Buena (Verde):** Valores normales de CO2 y COV.
-  ![LED Verde](Led%20Verde.jpg)
+  ![LED Verde](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/fotos/Led%20Verde.jpg)
 
 * **Calidad Regular (Amarillo):** Alerta preventiva. CO2 entre 700-1000 ppm o COV entre 250-500 ppb.
-  ![LED Amarillo](Led%20Amarillo.jpg)
+  ![LED Amarillo](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/fotos/Led%20Amarillo.jpg)
 
 * **Calidad Crítica (Rojo):** Preemergencia. CO2 > 1000 ppm o COV > 500 ppb.
-  ![LED Rojo](Led%20Rojo.jpg)
+  ![LED Rojo](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/fotos/Led%20Rojo.jpg)
 
 ## 💻 Monitor Serial y Respaldo en la Nube
 Una vez calculados los promedios, el sistema emite los datos por serial para el dashboard local y realiza una petición HTTP POST a **Supabase** (retornando Código HTTP 201 en caso de éxito).
 
-![Vista Serial Monitor](Vista%20Serial%20Monitor.jpg)
+![Vista Serial Monitor](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/fotos/Vista%20Serial%20Monitor.jpg)
+![Vista Supabase]()
+![Vista Página Flask](https://github.com/Velcy-a/Control-climatol-gico-esp32/blob/main/templates/Vista%20de%20P%C3%A1gina.png)
 
 ## 🏗️ Estructura del Código
 * `GateWay.ino`: Maestro. Recibe y promedia datos, controla los LEDs, emite el faro de canal WiFi dinámico y sube las métricas a la BD.
