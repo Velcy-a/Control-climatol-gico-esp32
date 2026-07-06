@@ -95,7 +95,5 @@ Queremos agradecer a nuestro profesor, José Fernando Poblete Cabezas por acompa
 
   ![Foto Kirby](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjUreEyPZzDjWjUg0vDb7AbjTBvEvTiCWTXDOC_41bW6FbVyk7mmDYN8&s=10)
   
-[![Video Importante]
-(https://img.youtube.com/vi/cEdRb1l6gq4/maxresdefault.jpg)]
-(https://www.youtube.com/watch?v=cEdRb1l6gq4)
 
+  [![Video Importante](https://youtu.be/cEdRb1l6gq4)](https://youtu.be/cEdRb1l6gq4)
