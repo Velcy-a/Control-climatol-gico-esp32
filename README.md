@@ -49,13 +49,8 @@ pip install flask pyserial
 ## 📁 Estructura de Archivos del Proyecto
 
 Para que el sistema funcione correctamente (especialmente el servidor web), asegúrate de organizar los archivos de la siguiente manera en tu directorio de trabajo:
-Plaintext
 
-TuProyecto/
-├── APP.py
-└── templates/
-    └── index.html
-
+Carpeta > app.py y Carpeta templates > Index.html
 ## 🎮 Comandos Seriales de Control Manual
 
 El panel web de Flask (APP.py) interactúa con el Gateway despachando instrucciones a través del puerto serial para forzar el estado de la alerta visual. Los comandos que interpreta el microcontrolador son:
