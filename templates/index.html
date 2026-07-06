@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo Ambiental IoT</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1a1a1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 { color: #00adb5; }
+        #panel-principal {
+            width: 100%;
+            max-width: 750px;
+            background: #22222b;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        #bloque-sensores, #bloque-actuadores {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+        #bloque-sensores {
+            border-bottom: 1px solid #3a3a4a;
+        }
+        #terminal-datos {
+            background-color: #050505;
+            color: #39ff14;
+            font-family: monospace;
+            padding: 18px;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            border: 1px solid #282828;
+        }
+        #matriz-control {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+        }
+        #btn-v-on { background-color: #2e7d32; }
+        #btn-v-off { background-color: #c62828; }
+        #btn-a-on { background-color: #f57f17; color: #000; }
+        #btn-a-off { background-color: #ad5a00; }
+        #btn-r-on { background-color: #d32f2f; }
+        #btn-r-off { background-color: #7f0000; }
+    </style>
+</head>
+<body>
+
+    <h1>Consola de Monitoreo General</h1>
+
+    <div id="panel-principal">
+        
+        <div id="bloque-sensores">
+            <h2>📊 Mediciones del Sistema (Valores Promediados y Únicos)</h2>
+            <div id="terminal-datos">
+                {{ promedio }}
+            </div>
+        </div>
+
+        <div id="bloque-actuadores">
+            <h2>🚨 Control Operacional de Actuadores (Físico)</h2>
+            <div id="matriz-control">
+                <form action="/enviar_comando" method="POST">
+                    <input type="hidden" name="comando" value="VERDE_ON">
+                    <button type="submit" id="btn-v-on">VERDE ON</button>
+                </form>
+                <form action="/enviar_comando" method="POST">
+                    <input type="hidden" name="comando" value="VERDE_OFF">
+                    <button type="submit" id="btn-v-off">VERDE OFF</button>
+                </form>
+                
+                <form action="/enviar_comando" method="POST">
+                    <input type="hidden" name="comando" value="AMARILLO_ON">
+                    <button type="submit" id="btn-a-on">AMARILLO ON</button>
+                </form>
+                <form action="/enviar_comando" method="POST">
+                    <input type="hidden" name="comando" value="AMARILLO_OFF">
+                    <button type="submit" id="btn-a-off">AMARILLO OFF</button>
+                </form>
+
+                <form action="/enviar_comando" method="POST">
+                    <input type="hidden" name="comando" value="ROJO_ON">
+                    <button type="submit" id="btn-r-on">ROJO ON</button>
+                </form>
+                <form action="/enviar_comando" method="POST">
+                    <input type="hidden" name="comando" value="ROJO_OFF">
+                    <button type="submit" id="btn-r-off">ROJO OFF</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
