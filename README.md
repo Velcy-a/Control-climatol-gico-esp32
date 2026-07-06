@@ -64,7 +64,7 @@ El panel web de Flask (APP.py) interactúa con el Gateway despachando instruccio
 
 * ROJO_ON / ROJO_OFF: Enciende o apaga de forma manual el LED Rojo.
 
-##📡 Mecanismo de Sintonización Inalámbrica
+## 📡 Mecanismo de Sintonización Inalámbrica
 
 Debido a que el router doméstico puede alterar dinámicamente el canal de radiofrecuencia de la red, el sistema incluye un protocolo automático de emparejamiento:
 
