@@ -74,5 +74,5 @@ Debido a que el router doméstico puede alterar dinámicamente el canal de radio
 
 * Al capturar la señal, los nodos configuran su hardware en dicho canal de transmisión definitivo e inician el envío periódico de las métricas por ESP-NOW.
 
-# Integrantes del Grupo
+## Integrantes del Grupo
 Jaime Fuentes, Joaquín Fuentes, Ricardo Toro.
