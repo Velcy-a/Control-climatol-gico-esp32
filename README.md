@@ -78,9 +78,9 @@ Debido a que el router doméstico puede alterar dinámicamente el canal de radio
 
 ## Integrantes del Grupo
 
-* Jaime Fuentes
+* Jaime Fuentes.
 
-* Joaquín Fuentes 
+* Joaquín Fuentes. 
 
 * Ricardo Toro.
 
@@ -94,3 +94,6 @@ Debido a que el router doméstico puede alterar dinámicamente el canal de radio
 Queremos agradecer a nuestro profesor, José Fernando Poblete Cabezas por acompañarnos a lo largo de la carrera.
 
   ![Foto Kirby](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjUreEyPZzDjWjUg0vDb7AbjTBvEvTiCWTXDOC_41bW6FbVyk7mmDYN8&s=10)
+
+  [![Video Relevante](https://youtu.be/cEdRb1l6gq4)](https://youtu.be/cEdRb1l6gq4)
+
