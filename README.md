@@ -81,4 +81,5 @@ Jaime Fuentes, Joaquín Fuentes, Ricardo Toro.
 
 ## Trabajo para la asignatura DCSH01
 Muchas gracias a nuestro profesor, Jose Poblete por acompañarnos.
+
 ![Foto Kirby](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjUreEyPZzDjWjUg0vDb7AbjTBvEvTiCWTXDOC_41bW6FbVyk7mmDYN8&s=10)
