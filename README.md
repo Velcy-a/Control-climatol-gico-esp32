@@ -44,5 +44,35 @@ Asegúrate de crear una tabla llamada `mediciones` con las siguientes columnas: 
 Instala las dependencias de Python:
 pip install flask pyserial
 
+## 📁 Estructura de Archivos del Proyecto
+
+Para que el sistema funcione correctamente (especialmente el servidor web), asegúrate de organizar los archivos de la siguiente manera en tu directorio de trabajo:
+Plaintext
+
+TuProyecto/
+├── APP.py
+└── templates/
+    └── index.html
+
+## 🎮 Comandos Seriales de Control Manual
+
+El panel web de Flask (APP.py) interactúa con el Gateway despachando instrucciones a través del puerto serial para forzar el estado de la alerta visual. Los comandos que interpreta el microcontrolador son:
+
+* VERDE_ON / VERDE_OFF: Enciende o apaga de forma manual el LED Verde.
+
+* AMARILLO_ON / AMARILLO_OFF: Enciende o apaga de forma manual el LED Amarillo.
+
+* ROJO_ON / ROJO_OFF: Enciende o apaga de forma manual el LED Rojo.
+
+##📡 Mecanismo de Sintonización Inalámbrica
+
+Debido a que el router doméstico puede alterar dinámicamente el canal de radiofrecuencia de la red, el sistema incluye un protocolo automático de emparejamiento:
+
+* El Gateway evalúa su canal asignado y emite un faro de sincronización (Broadcast) cada 200ms.
+
+* Al encenderse, tanto el Nodo 1 como el Nodo 2 efectúan un barrido cíclico por las frecuencias de los canales 1 al 13 en busca de este faro.
+
+* Al capturar la señal, los nodos configuran su hardware en dicho canal de transmisión definitivo e inician el envío periódico de las métricas por ESP-NOW.
+
 # Integrantes del Grupo
 Jaime Fuentes, Joaquín Fuentes, Ricardo Toro.
