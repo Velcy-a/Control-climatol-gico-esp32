@@ -13,8 +13,8 @@
 // ==========================================
 // CONFIGURACIÓN DE CREDENCIALES SUPABASE
 // ==========================================
-const char* supabase_url = "https://zycxhpciucjibmqnmsbk.supabase.co/rest/v1/mediciones";
-const char* supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5Y3hocGNpdWNqaWJtcW5tc2JrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMzMzI2NjAsImV4cCI6MjA5ODkwODY2MH0.vwQwsx6zhcC5z1VG7a7_minLCwPTFrbURZy9CBN8Pjk";
+const char* supabase_url = "user";
+const char* supabase_key = "password";
 
 // Estructura de datos recibida por ESP-NOW desde los nodos
 typedef struct struct_data {
